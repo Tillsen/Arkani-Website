@@ -1,11 +1,11 @@
 h1 {
-    color: black;
+    color: #7f5470;
     text-align: center;
     font-size: 80px
 }
 
 h4 {
-    color: black;
+    color: #7f5470;
     text-align: center;
     font-size: 40px;
 }
@@ -21,9 +21,19 @@ p {
     font-size: 25px; 
 }
 
+.text {
+    border: 7px double rgb(173, 61, 20);
+    padding: 5px;
+    margin: 5px;
+}
+
 ol {
     font-size: 35px;
+    text-align: center;
+    list-style-type: none;
+    color: #2e3e47;
 }
+
 body {
     background-image: linear-gradient(to top, #be7f52, #ab6266, #7f5470, #4d4963, #2e3a45);;
     background-repeat: no-repeat;
@@ -35,4 +45,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.Kategorie {
+    border: 7px double rgb(173, 61, 20);
+    padding: 3px;
+    margin: 3px;
+}
+th {
+    height: 35px;
 }
