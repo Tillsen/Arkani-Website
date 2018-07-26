@@ -44,16 +44,27 @@
                 </table>
                 
                 <ol class="Alter">
-                    <li>Alter von Oles Arkani: <p id="ole">0</p></li>
-                    <li>Alter von Eddis Arkani</li>
-                    <li>Alter von Toms Arkani</li>
-                    <li>Alter von Foxs Arkani</li>
-                    <li>Alter von Tills Arkani</li>
+                    <li>Alter von Oles Arkani in Tagen: <p id="ole">0</p></li>
+                    <li>Alter von Eddis Arkani in Tagen: <p id="eddi">0</p></li>
+                    <li>Alter von Toms Arkani in Tagen: <p id="tom">0</p></li>
+                    <li>Alter von Foxs Arkani in Tagen: <p id="fox">0</p></li>
+                    <li>Alter von Tills Arkani in Tagen: <p id="till">0</p></li>
                 </ol>
                    </table>
 
                    <script>
-                        setInterval(startTime(1994, 4, 11), 1000);
+                            startTime(1994, 4, 11, "ole")
+                            startTime(1996, 7, 1, "eddi")
+                            startTime(1995, 8, 23, "tom")
+                            startTime(1995, 9, 26, "fox")
+                            startTime(1995, 8, 5, "till")    
                     </script>
+
+                            <h1 id="Berechnung">Berechnung</h1>  
+                                <form action="process-php" method="POST">
+                                    <div>
+                                        <label>WP Wert</label>
+                                    </div>
+                                </form>
     </body>
 </html>

@@ -1,10 +1,8 @@
-function startTime(year, month, day) {
+function startTime(year, month, day, id) {
 	var birthday = new Date(year, month, day);
-	console.log(birthday)
-	var today = new Date()
+	var today = new Date();
 	var timeDiff = today.getTime() - birthday.getTime()
-	var SecDiff = Math.ceil(timeDiff / (1000)); 
-	console.log(SecDiff)
-	document.getElementById('ole').innerHTML = SecDiff;
+	var SecDiff = Math.abs(Math.ceil(timeDiff / (1000*60*60*24))); 
+	document.getElementById(id).innerHTML = SecDiff;
 	
 }
